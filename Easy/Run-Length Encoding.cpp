@@ -14,4 +14,4 @@ string solve(string s) {
     answer += to_string(count);
     answer += s[n - 1];
     return answer;
-}
+}   
