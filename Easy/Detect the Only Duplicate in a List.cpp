@@ -38,7 +38,7 @@ int solve(vector<int>& nums) {
     }
     return slow;
 
-
+    
     int n = nums.size();
     int sum = 0;
     for(int i = 0; i < n; i++){
