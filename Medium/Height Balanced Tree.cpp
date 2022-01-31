@@ -32,3 +32,38 @@ bool solve(Tree* root) {
     int h = height(root);
     return answer;
 }
+
+/**
+ * class Tree {
+ *     public:
+ *         int val;
+ *         Tree *left;
+ *         Tree *right;
+ * };
+ */
+
+int answer = false;
+int height(Tree* root){
+    if(root == NULL){
+        return 0;
+    }
+    int l = height(root->left);
+    int r =  height(root->right);
+    // cout << l << " " << r << endl;
+    if(abs(l - r) >= 2){
+        answer = true;
+    }
+    return 1 + max(l,r);
+}
+
+bool solve(Tree* root) {
+    answer = false;
+    if(root == NULL){
+       return true;
+    }
+    int h = height(root);
+    if(answer == true){
+        return false;
+    }
+    return true;
+}
