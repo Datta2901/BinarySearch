@@ -1,0 +1,1 @@
+* Solutions to the problems solved on binary search platform
