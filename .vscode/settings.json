@@ -4,6 +4,8 @@
         "*.cpp": "cpp",
         "cmath": "cpp",
         "*.tcc": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp"
     }
 }
