@@ -19,3 +19,9 @@ vector<string> solve(vector<string>& strs) {
     fillVector(answer,"blue",strs.size() - cr - cg);
     return answer;    
 }
+
+vector<string> solve(vector<string>& strs) {
+    sort(strs.begin(),strs.end());
+    reverse(strs.begin(),strs.end());
+    return strs;
+}
